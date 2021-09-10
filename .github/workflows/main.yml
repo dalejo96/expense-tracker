@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
       - name: Install dependencies
-        run: npm install
+        run: npm install && cd ..
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
